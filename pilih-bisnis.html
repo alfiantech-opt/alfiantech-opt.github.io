@@ -1,0 +1,139 @@
+```html
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Bisnis Anda - ApEduPreneur</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Animate On Scroll Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .custom-shadow {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.07);
+        }
+        .btn-animated {
+            transition: all 0.3s ease;
+        }
+        .btn-animated:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Header / Navigation Bar -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 custom-shadow">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="bg-blue-500 p-2 rounded-xl">
+                    <i class="fa fa-rocket text-white text-lg"></i>
+                </div>
+                <span class="text-2xl font-bold text-slate-800">ApEdu<span class="text-blue-500">Preneur</span></span>
+            </a>
+            <a href="index.html" class="hidden md:inline-block bg-slate-800 text-white font-semibold px-6 py-2 rounded-lg hover:bg-slate-900 btn-animated">
+                Kembali ke Beranda
+            </a>
+            <a href="index.html" class="md:hidden text-slate-800">
+                <i class="fa fa-home text-2xl"></i>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Business Selection Section -->
+        <section class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h1 class="text-4xl md:text-5xl font-bold text-slate-800">Pilih Template Bisnis Impianmu</h1>
+                    <p class="text-slate-500 mt-4 max-w-2xl mx-auto">Kami telah menyiapkan model bisnis yang teruji, rendah risiko, dan siap untuk kamu jalankan. Pilih salah satu untuk memulai.</p>
+                </div>
+
+                <!-- Business Options Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    
+                    <!-- Business Card 1: Agen Bank -->
+                    <div class="bg-white rounded-2xl p-8 text-center custom-shadow transition-all duration-300 card-hover" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-blue-100 text-blue-500 text-4xl w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                            <i class="fa fa-university"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-slate-800">Agen Bank</h3>
+                        <p class="text-slate-500 mb-6">Menjadi pusat layanan keuangan di komunitasmu. Bantu warga sekitar untuk transfer, bayar tagihan, dan lainnya.</p>
+                        <!-- UPDATE: Link to agen-bank.html -->
+                        <a href="agen-bank.html" class="bg-blue-500 text-white font-bold px-8 py-3 rounded-lg text-lg hover:bg-blue-600 btn-animated">
+                           Pelajari Lebih Lanjut
+                        </a>
+                    </div>
+
+                    <!-- Business Card 2: Laundry Kiloan -->
+                    <div class="bg-white rounded-2xl p-8 text-center custom-shadow transition-all duration-300 card-hover" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-green-100 text-green-500 text-4xl w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                            <i class="fa fa-tshirt"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-slate-800">Laundry Kiloan</h3>
+                        <p class="text-slate-500 mb-6">Bisnis yang selalu dibutuhkan, terutama di area padat penduduk seperti kos-kosan atau perumahan.</p>
+                        <!-- UPDATE: Link to laundry-kiloan.html -->
+                        <a href="laundry-kiloan.html" class="bg-green-500 text-white font-bold px-8 py-3 rounded-lg text-lg hover:bg-green-600 btn-animated">
+                            Pelajari Lebih Lanjut
+                        </a>
+                    </div>
+
+                    <!-- Business Card 3: Warung Kopi Modern -->
+                    <div class="bg-white rounded-2xl p-8 text-center custom-shadow transition-all duration-300 card-hover" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-yellow-100 text-yellow-600 text-4xl w-20 h-20 mx-auto rounded-full flex items-center justify-center mb-6">
+                            <i class="fa fa-coffee"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-3 text-slate-800">Warung Kopi Modern</h3>
+                        <p class="text-slate-500 mb-6">Sajikan kopi berkualitas dengan suasana nyaman. Jadi tempat nongkrong favorit anak muda di daerahmu.</p>
+                        <a href="#" class="bg-yellow-500 text-white font-bold px-8 py-3 rounded-lg text-lg hover:bg-yellow-600 btn-animated">
+                            Pelajari Lebih Lanjut
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white mt-16">
+        <div class="container mx-auto px-6 py-8">
+            <div class="border-t border-slate-700 pt-6 text-center text-slate-500 text-sm">
+                &copy; 2024 ApEduPreneur (Apollo Team). Hak Cipta Dilindungi.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Animate On Scroll Library Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+
+</body>
+</html>
+```

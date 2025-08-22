@@ -1,0 +1,368 @@
+```html
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApEduPreneur - Wujudkan Impian Bisnis Anda</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Animate On Scroll Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        /* Menggunakan font Poppins sebagai default */
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        
+        /* Efek gradien modern */
+        .hero-gradient {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+        }
+        .cta-gradient {
+             background: linear-gradient(135deg, #818cf8 0%, #a78bfa 100%);
+        }
+        
+        /* Efek Glassmorphism */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 1.5rem; /* rounded-3xl */
+        }
+
+        /* Custom shadow */
+        .custom-shadow {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.07);
+        }
+        
+        /* Animasi Tombol */
+        .btn-animated {
+            transition: all 0.3s ease;
+        }
+        .btn-animated:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        /* Animasi Timeline */
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: white;
+            border: 4px solid #60a5fa; /* blue-400 */
+            top: 10px;
+            left: -10px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Header / Navigation Bar -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 custom-shadow">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-3">
+                <div class="bg-blue-500 p-2 rounded-xl">
+                    <i class="fa fa-rocket text-white text-lg"></i>
+                </div>
+                <span class="text-2xl font-bold text-slate-800">ApEdu<span class="text-blue-500">Preneur</span></span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 font-medium">
+                <a href="#fitur" class="text-slate-600 hover:text-blue-500 transition duration-300">Fitur</a>
+                <a href="#cara-kerja" class="text-slate-600 hover:text-blue-500 transition duration-300">Cara Kerja</a>
+                <a href="#untuk-siapa" class="text-slate-600 hover:text-blue-500 transition duration-300">Untuk Siapa</a>
+            </div>
+            <a href="#" class="hidden md:inline-block bg-slate-800 text-white font-semibold px-6 py-2 rounded-lg hover:bg-slate-900 btn-animated">
+                Mulai Sekarang
+            </a>
+            <button class="md:hidden text-slate-800">
+                <i class="fa fa-bars text-2xl"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative hero-gradient pt-24 pb-32 overflow-hidden">
+            <!-- Abstract shapes -->
+            <div class="absolute top-0 left-0 w-64 h-64 bg-white/10 rounded-full -translate-x-16 -translate-y-16"></div>
+            <div class="absolute bottom-0 right-0 w-80 h-80 bg-white/10 rounded-full translate-x-20 translate-y-20"></div>
+            
+            <div class="container mx-auto px-6 text-center relative z-10">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-6" data-aos="fade-down">
+                    Punya Ide Bisnis? <br> <span class="text-blue-200">Wujudkan Bersama Kami.</span>
+                </h1>
+                <p class="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="200">
+                    ApEduPreneur adalah platform terpadu untuk belajar, memulai, dan mengembangkan bisnis dengan panduan langkah demi langkah, template teruji, dan dukungan komunitas.
+                </p>
+                <!-- UPDATE: Link changed to the new business selection page -->
+                <a href="pilih-bisnis.html" class="bg-white text-blue-500 font-bold px-8 py-4 rounded-xl text-lg hover:bg-slate-100 shadow-2xl btn-animated" data-aos="zoom-in" data-aos-delay="400">
+                    Mulai Perjalananmu <i class="fa fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Problems Section -->
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Ini Masalahmu? Kami Punya Solusinya.</h2>
+                    <p class="text-slate-500 mt-3 max-w-2xl mx-auto">Jutaan UMKM di Indonesia terjebak dalam masalah yang sama. Saatnya keluar dari lingkaran ini.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Problem Card 1 -->
+                    <div class="bg-slate-50 p-8 rounded-2xl text-center border border-slate-200/80" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-red-100 text-red-500 text-3xl w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-5">
+                            <i class="fa fa-wallet"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-slate-800">Literasi Keuangan</h3>
+                        <p class="text-slate-500">Bingung atur cash flow? Uang bisnis dan pribadi sering tercampur aduk.</p>
+                    </div>
+                    <!-- Problem Card 2 -->
+                    <div class="bg-slate-50 p-8 rounded-2xl text-center border border-slate-200/80" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-blue-100 text-blue-500 text-3xl w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-5">
+                            <i class="fa fa-hand-holding-dollar"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-slate-800">Akses Permodalan</h3>
+                        <p class="text-slate-500">Mau pinjam modal tapi nggak tahu caranya dan takut sama pinjol ilegal.</p>
+                    </div>
+                    <!-- Problem Card 3 -->
+                    <div class="bg-slate-50 p-8 rounded-2xl text-center border border-slate-200/80" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-green-100 text-green-500 text-3xl w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-5">
+                            <i class="fa fa-store"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-slate-800">Strategi Digital</h3>
+                        <p class="text-slate-500">Pesaing sudah jualan di TikTok dan Instagram, kita masih bingung mulai dari mana.</p>
+                    </div>
+                    <!-- Problem Card 4 -->
+                    <div class="bg-slate-50 p-8 rounded-2xl text-center border border-slate-200/80" data-aos="fade-up" data-aos-delay="400">
+                        <div class="bg-yellow-100 text-yellow-500 text-3xl w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-5">
+                            <i class="fa fa-map-signs"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-slate-800">Minim Bimbingan</h3>
+                        <p class="text-slate-500">Jalan sendiri tanpa mentor, sering merasa mentok dan ingin menyerah.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="cara-kerja" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Kurikulum Suksesmu</h2>
+                    <p class="text-slate-500 mt-3 max-w-2xl mx-auto">Kami siapkan 6 level perjalanan yang akan mengubahmu dari pemula menjadi pengusaha andal.</p>
+                </div>
+                <!-- Timeline -->
+                <div class="relative max-w-3xl mx-auto">
+                    <!-- Garis tengah -->
+                    <div class="absolute left-4 h-full w-1 bg-blue-200"></div>
+                    
+                    <!-- Level 1 -->
+                    <div class="relative pl-12 pb-12 timeline-item" data-aos="fade-left">
+                        <div class="bg-white p-6 rounded-2xl custom-shadow">
+                            <span class="text-sm font-bold text-blue-500 bg-blue-100 py-1 px-3 rounded-full">LEVEL 1</span>
+                            <h3 class="text-xl font-bold my-2 text-slate-800">Melek Finansial</h3>
+                            <p class="text-slate-500">Pahami dasar-dasar keuangan bisnis lewat video seru dan kuis interaktif. Nggak pakai pusing!</p>
+                        </div>
+                    </div>
+                    <!-- Level 2 -->
+                    <div class="relative pl-12 pb-12 timeline-item" data-aos="fade-left">
+                        <div class="bg-white p-6 rounded-2xl custom-shadow">
+                            <span class="text-sm font-bold text-blue-500 bg-blue-100 py-1 px-3 rounded-full">LEVEL 2</span>
+                            <h3 class="text-xl font-bold my-2 text-slate-800">Simulasi Bisnis</h3>
+                            <p class="text-slate-500">Coba jadi bos di dunia virtual! Kelola stok, layani pelanggan, dan hadapi tantangan tanpa risiko bangkrut.</p>
+                        </div>
+                    </div>
+                    <!-- Level 3 -->
+                    <div class="relative pl-12 pb-12 timeline-item" data-aos="fade-left">
+                        <div class="bg-white p-6 rounded-2xl custom-shadow">
+                            <span class="text-sm font-bold text-blue-500 bg-blue-100 py-1 px-3 rounded-full">LEVEL 3</span>
+                            <h3 class="text-xl font-bold my-2 text-slate-800">Pencatatan Digital</h3>
+                            <p class="text-slate-500">Ucapkan selamat tinggal pada buku catatan! Catat semua transaksi pakai sistem kasir (POS) simpel di HP-mu.</p>
+                        </div>
+                    </div>
+                    <!-- Level 4 -->
+                    <div class="relative pl-12 pb-12 timeline-item" data-aos="fade-left">
+                        <div class="bg-white p-6 rounded-2xl custom-shadow">
+                            <span class="text-sm font-bold text-blue-500 bg-blue-100 py-1 px-3 rounded-full">LEVEL 4</span>
+                            <h3 class="text-xl font-bold my-2 text-slate-800">Mentoring & Komunitas</h3>
+                            <p class="text-slate-500">Ngobrol langsung dengan mentor ahli dan gabung di grup diskusi bareng sesama pejuang bisnis.</p>
+                        </div>
+                    </div>
+                    <!-- Level 5 -->
+                     <div class="relative pl-12 pb-12 timeline-item" data-aos="fade-left">
+                        <div class="bg-white p-6 rounded-2xl custom-shadow">
+                            <span class="text-sm font-bold text-blue-500 bg-blue-100 py-1 px-3 rounded-full">LEVEL 5</span>
+                            <h3 class="text-xl font-bold my-2 text-slate-800">Analisis & Fintech</h3>
+                            <p class="text-slate-500">Dapatkan rapor bisnismu secara otomatis dan hubungkan usahamu ke e-wallet untuk pembayaran digital.</p>
+                        </div>
+                    </div>
+                    <!-- Level 6 -->
+                     <div class="relative pl-12 timeline-item" data-aos="fade-left">
+                        <div class="bg-white p-6 rounded-2xl custom-shadow">
+                            <span class="text-sm font-bold text-blue-500 bg-blue-100 py-1 px-3 rounded-full">LEVEL 6</span>
+                            <h3 class="text-xl font-bold my-2 text-slate-800">Siap Didanai</h3>
+                            <p class="text-slate-500">Dengan rekam jejak bisnis yang rapi, pintu menuju permodalan resmi jadi lebih terbuka lebar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="fitur" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Fitur Andalan untuk Kamu</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Feature -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80" data-aos="fade-up" data-aos-delay="100">
+                        <div class="bg-blue-500 text-white text-2xl w-12 h-12 rounded-xl flex-shrink-0 flex items-center justify-center mb-4">
+                            <i class="fa fa-file-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-slate-800">Template Bisnis Anti Gagal</h3>
+                        <p class="text-slate-500">Pilih model bisnis (laundry, agen bank, dll) yang sudah terbukti jalan dengan modal minim.</p>
+                    </div>
+                    <!-- Feature -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80" data-aos="fade-up" data-aos-delay="200">
+                        <div class="bg-blue-500 text-white text-2xl w-12 h-12 rounded-xl flex-shrink-0 flex items-center justify-center mb-4">
+                            <i class="fa fa-robot"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-slate-800">Asisten Bisnis AI</h3>
+                        <p class="text-slate-500">Dapatkan saran cerdas berdasarkan data penjualanmu untuk bantu ambil keputusan.</p>
+                    </div>
+                    <!-- Feature -->
+                    <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200/80" data-aos="fade-up" data-aos-delay="300">
+                        <div class="bg-blue-500 text-white text-2xl w-12 h-12 rounded-xl flex-shrink-0 flex items-center justify-center mb-4">
+                            <i class="fa fa-trophy"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-slate-800">Misi & Hadiah Harian</h3>
+                        <p class="text-slate-500">Belajar jadi seru! Selesaikan misi harian, kumpulkan poin, dan dapatkan lencana keren.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- User Personas Section -->
+        <section id="untuk-siapa" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800">Siapapun Bisa Jadi Pengusaha</h2>
+                    <p class="text-slate-500 mt-3 max-w-2xl mx-auto">Platform ini kami rancang khusus untuk para pejuang seperti kamu.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Persona 1: Ani -->
+                    <div class="bg-white rounded-2xl p-8 text-center custom-shadow transform hover:-translate-y-2 transition duration-300" data-aos="zoom-in-up" data-aos-delay="100">
+                        <img src="https://placehold.co/100x100/dbeafe/3b82f6?text=AR" alt="Ibu Ani Rohaya" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white ring-4 ring-blue-300">
+                        <h3 class="text-xl font-bold text-slate-800">Ibu Ani</h3>
+                        <p class="text-blue-500 font-semibold mb-3">Calon Pengusaha</p>
+                        <p class="text-slate-500 italic">"Saya ingin buka butik untuk biaya sekolah anak, tapi bingung cara daftarnya dan takut soal keuangan."</p>
+                    </div>
+                    <!-- Persona 2: Ahmad -->
+                    <div class="bg-white rounded-2xl p-8 text-center custom-shadow transform hover:-translate-y-2 transition duration-300" data-aos="zoom-in-up" data-aos-delay="200">
+                        <img src="https://placehold.co/100x100/dbeafe/3b82f6?text=AL" alt="Ahmad Luqman" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white ring-4 ring-blue-300">
+                        <h3 class="text-xl font-bold text-slate-800">Ahmad</h3>
+                        <p class="text-blue-500 font-semibold mb-3">Mahasiswa Kreatif</p>
+                        <p class="text-slate-500 italic">"Saya sudah jualan online, tapi tidak teratur. Ingin bisnis lebih besar tapi takut salah langkah dan kena tipu."</p>
+                    </div>
+                    <!-- Persona 3: Idris -->
+                    <div class="bg-white rounded-2xl p-8 text-center custom-shadow transform hover:-translate-y-2 transition duration-300" data-aos="zoom-in-up" data-aos-delay="300">
+                        <img src="https://placehold.co/100x100/dbeafe/3b82f6?text=IH" alt="Bapak Idris" class="w-24 h-24 rounded-full mx-auto mb-4 border-4 border-white ring-4 ring-blue-300">
+                        <h3 class="text-xl font-bold text-slate-800">Bapak Idris</h3>
+                        <p class="text-blue-500 font-semibold mb-3">Pensiunan Produktif</p>
+                        <p class="text-slate-500 italic">"Di masa pensiun, saya ingin tetap aktif. Paham dasar bisnis, tapi gaptek dengan teknologi digital saat ini."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-gradient">
+            <div class="container mx-auto px-6 py-24 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4" data-aos="zoom-in">Jangan Tunda Lagi Mimpimu!</h2>
+                <p class="text-blue-100 text-lg max-w-2xl mx-auto mb-8" data-aos="zoom-in" data-aos-delay="100">
+                    Ribuan orang sudah memulai. Kini giliranmu untuk mengambil langkah pertama. Gratis untuk memulai!
+                </p>
+                <a href="#" class="bg-white text-blue-500 font-bold px-8 py-4 rounded-xl text-lg hover:bg-slate-100 shadow-2xl btn-animated" data-aos="zoom-in" data-aos-delay="200">
+                    Daftar Sekarang, Gratis!
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="kontak" class="bg-slate-900 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">ApEdu<span class="text-blue-400">Preneur</span></h3>
+                    <p class="text-slate-400">Mendidik, Mengangkat, dan Mengembangkan potensi wirausaha di seluruh Indonesia.</p>
+                </div>
+                <!-- Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#fitur" class="text-slate-400 hover:text-white">Fitur</a></li>
+                        <li><a href="#cara-kerja" class="text-slate-400 hover:text-white">Cara Kerja</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white">FAQ</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <!-- Legal -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-slate-400 hover:text-white">Kebijakan Privasi</a></li>
+                        <li><a href="#" class="text-slate-400 hover:text-white">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <!-- Social Media -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Ikuti Kami</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-slate-400 hover:text-white text-2xl"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-white text-2xl"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-white text-2xl"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="text-slate-400 hover:text-white text-2xl"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-700 mt-8 pt-6 text-center text-slate-500 text-sm">
+                &copy; 2024 ApEduPreneur (Apollo Team). Hak Cipta Dilindungi.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Animate On Scroll Library Script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // values from 0 to 3000, with step 50ms
+            once: true, // whether animation should happen only once - while scrolling down
+        });
+    </script>
+
+</body>
+</html>
+```

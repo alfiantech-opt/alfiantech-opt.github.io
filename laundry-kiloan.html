@@ -1,0 +1,157 @@
+```html
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Bisnis Laundry Kiloan - ApEduPreneur</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .custom-shadow {
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.07), 0 4px 6px -4px rgb(0 0 0 / 0.07);
+        }
+        .btn-animated {
+            transition: all 0.3s ease;
+        }
+        .btn-animated:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg sticky top-0 z-50 custom-shadow">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-3">
+                <div class="bg-green-500 p-2 rounded-xl">
+                    <i class="fa fa-rocket text-white text-lg"></i>
+                </div>
+                <span class="text-2xl font-bold text-slate-800">ApEdu<span class="text-green-500">Preneur</span></span>
+            </a>
+            <div>
+                <a href="demo-laundry-kiloan.html" class="bg-green-500 text-white font-semibold px-4 py-2 rounded-lg hover:bg-green-600 btn-animated mr-2">
+                    <i class="fa fa-gamepad mr-2"></i> Mulai Simulasi
+                </a>
+                <a href="pilih-bisnis.html" class="hidden md:inline-block bg-slate-800 text-white font-semibold px-4 py-2 rounded-lg hover:bg-slate-900 btn-animated">
+                    <i class="fa fa-arrow-left mr-2"></i> Kembali
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-gradient text-white pt-20 pb-16">
+            <div class="container mx-auto px-6 text-center">
+                <div class="bg-white/20 text-white text-5xl w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-6">
+                    <i class="fa fa-tshirt"></i>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold">Template Bisnis: Laundry Kiloan</h1>
+                <p class="text-lg text-green-100 mt-2">Solusi praktis untuk kesibukan sehari-hari.</p>
+            </div>
+        </section>
+
+        <!-- Business Details Section -->
+        <section class="py-24">
+            <div class="container mx-auto px-6 max-w-4xl">
+                
+                <!-- Edukasi Bisnis -->
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold text-slate-800 mb-4">Kenapa Bisnis Laundry Kiloan?</h2>
+                    <p class="text-slate-600 leading-relaxed">Pakaian kotor adalah masalah abadi. Bisnis laundry kiloan menjawab kebutuhan dasar masyarakat modern yang sibuk dan tidak punya waktu untuk mencuci. Dengan lokasi yang tepat (dekat kos, kampus, atau perumahan), bisnis ini memiliki perputaran uang yang cepat dan pelanggan yang loyal.</p>
+                </div>
+
+                <!-- Sistem Kerja -->
+                <div class="mb-12">
+                    <h2 class="text-3xl font-bold text-slate-800 mb-4">Bagaimana Sistem Kerjanya?</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <i class="fa fa-check-circle text-green-500 text-xl mt-1"></i>
+                            <p class="text-slate-600">Pelanggan membawa pakaian kotor, Anda menimbangnya dan memberikan nota.</p>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <i class="fa fa-check-circle text-green-500 text-xl mt-1"></i>
+                            <p class="text-slate-600">Proses cuci, kering, dan setrika dilakukan sesuai paket yang dipilih (misal: reguler 3 hari, ekspres 1 hari).</p>
+                        </div>
+                         <div class="flex items-start space-x-4">
+                            <i class="fa fa-check-circle text-green-500 text-xl mt-1"></i>
+                            <p class="text-slate-600">Setelah selesai, pakaian dipacking rapi dan pelanggan dihubungi untuk pengambilan.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Estimasi Permodalan -->
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-800 mb-4">Estimasi Permodalan Awal</h2>
+                    <p class="text-slate-600 mb-6">Modal terbesar ada pada pembelian mesin. Berikut perkiraannya:</p>
+                    <div class="bg-white rounded-xl p-6 border border-slate-200">
+                        <ul class="space-y-3">
+                            <li class="flex justify-between items-center">
+                                <span class="text-slate-600">Mesin Cuci (1 unit)</span>
+                                <span class="font-bold text-slate-800">Rp 2.500.000</span>
+                            </li>
+                            <li class="flex justify-between items-center border-t pt-3">
+                                <span class="text-slate-600">Mesin Pengering (1 unit)</span>
+                                <span class="font-bold text-slate-800">Rp 2.000.000</span>
+                            </li>
+                             <li class="flex justify-between items-center border-t pt-3">
+                                <span class="text-slate-600">Setrika, Timbangan, Perlengkapan</span>
+                                <span class="font-bold text-slate-800">Rp 1.000.000</span>
+                            </li>
+                            <li class="flex justify-between items-center bg-slate-100 p-3 rounded-lg mt-4">
+                                <span class="font-bold text-slate-800 text-lg">Total Estimasi Modal</span>
+                                <span class="font-extrabold text-green-600 text-lg">Rp 5.500.000</span>
+                            </li>
+                        </ul>
+                         <p class="text-sm text-slate-500 mt-4">*Harga mesin adalah estimasi untuk kondisi bekas layak pakai untuk menekan modal awal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Permodalan CTA Section -->
+        <section id="permodalan" class="bg-slate-100 py-20">
+            <div class="container mx-auto px-6 text-center max-w-3xl">
+                <i class="fa fa-handshake text-green-500 text-5xl mb-4"></i>
+                <h2 class="text-3xl font-bold text-slate-800">Yakin dengan Bisnis Laundry?</h2>
+                <p class="text-slate-600 mt-4 mb-8 leading-relaxed">Jika Anda melihat potensi besar di lingkungan Anda namun modal menjadi halangan, mari berdiskusi. ApEduPreneur memiliki program kemitraan modal untuk pengusaha terpilih. Kami tidak hanya memberi dana, tapi juga bimbingan agar bisnis Anda cepat balik modal dan untung.</p>
+                <a href="demo-laundry-kiloan.html" class="bg-green-500 text-white font-bold px-8 py-4 rounded-xl text-lg hover:bg-green-600 btn-animated shadow-lg">
+                    Mulai Simulasi Bisnis <i class="fa fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white">
+        <div class="container mx-auto px-6 py-8">
+            <div class="border-t border-slate-700 pt-6 text-center text-slate-500 text-sm">
+                &copy; 2024 ApEduPreneur (Apollo Team). Hak Cipta Dilindungi.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+```
